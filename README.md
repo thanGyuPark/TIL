@@ -61,3 +61,13 @@
 - Jupyter notebook productivity tips
 - Code refactoring best practices
 - Efficient experiment tracking and management
+
+
+---
+
+## Anthropic's research insights
+<!--
+🔍 Reference: Anthropic Research (https://www.anthropic.com/research)
+This project draws inspiration from Anthropic’s latest insights on AI alignment, interpretability, and safety.
+-->
+
