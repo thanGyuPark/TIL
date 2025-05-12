@@ -66,8 +66,26 @@
 ---
 
 ## Anthropic's research insights
-<!--
-🔍 Reference: Anthropic Research (https://www.anthropic.com/research)
-This project draws inspiration from Anthropic’s latest insights on AI alignment, interpretability, and safety.
--->
+- [https://www.anthropic.com/research]
+- This project draws inspiration from Anthropic’s latest insights on AI alignment, interpretability, and safety.
+---
 
+## Qwen3:Think Deeper, Act Faster
+- [https://qwenlm.github.io/blog/qwen3/]
+
+---
+
+## Attention is All you need
+- RNN
+- LSTM
+- Seq2Seq
+- Attention Mechanism
+- Transformer
+
+## Prepare Data science interview
+- [https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers?tab=readme-ov-file]
+
+## automate-knowledge-graphs for RAG by openAI Academy
+- [https://academy.openai.com/public/videos/automate-knowledge-graphs]
+## MCP that demonstrates the potential for systematic integration between LLMs and constraint programming systems
+- [https://ar5iv.labs.arxiv.org/html/2501.00539]
