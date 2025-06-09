@@ -1,0 +1,65 @@
+분수의 덧셈
+문제 설명
+첫 번째 분수의 분자와 분모를 뜻하는 numer1, denom1, 두 번째 분수의 분자와 분모를 뜻하는 numer2, denom2가 매개변수로 주어집니다. 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.
+
+code
+def solution(numer1, denom1, numer2, denom2):
+    up = (numer1*denom2) + (numer2*denom1)
+    down = (denom1 * denom2)
+    
+     # 최대공약수로 기약분수로 만들기
+    def gcd(a, b):
+        while b:
+            a, b = b, a % b
+        return a
+
+    common = gcd(up, down)
+    return [up // common, down // common]
+
+----
+
+✅ 유클리드 호제법이란?
+
+두 수의 최대공약수(GCD, Greatest Common Divisor)를 구할 때, 두 수를 나눈 나머지를 이용해 반복적으로 계산하는 방법입니다.
+
+🔁 기본 원리
+
+두 양의 정수 a와 b에 대해 (단, a > b),
+\text{gcd}(a, b) = \text{gcd}(b, a \% b)
+
+	•	이 과정을 나머지가 0이 될 때까지 반복합니다.
+	•	나머지가 0이 되었을 때의 b 값이 바로 최대공약수입니다.
+
+⸻
+
+🔍 예시: gcd(48, 18)
+	1.	48 \div 18 = 2 나머지 12
+	2.	gcd(48, 18) = gcd(18, 12)
+	3.	18 \div 12 = 1 나머지 6
+	4.	gcd(18, 12) = gcd(12, 6)
+	5.	12 \div 6 = 2 나머지 0
+	6.	→ 최대공약수는 6
+
+⸻
+
+🔧 파이썬 코드 예제
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+또는 한 줄로도 표현 가능:
+
+import math
+math.gcd(a, b)
+
+
+⸻
+
+📌 왜 유클리드 호제법을 쓰나요?
+	•	빠릅니다 (시간복잡도: O(log(min(a, b))))
+	•	단순하고 구현이 쉬움
+	•	정확하고 범용적 (정수라면 어떤 수에도 적용 가능)
+
+⸻
