@@ -89,3 +89,6 @@
 - [https://academy.openai.com/public/videos/automate-knowledge-graphs]
 ## MCP that demonstrates the potential for systematic integration between LLMs and constraint programming systems
 - [https://ar5iv.labs.arxiv.org/html/2501.00539]
+
+## 프로그래머스 코딩테스트 연습
+
